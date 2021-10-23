@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "name": "Team",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "long_description": {
+      "type": "richtext"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

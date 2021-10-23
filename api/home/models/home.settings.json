@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "Home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "background_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consumer.consumer"
+    },
+    "homecards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-cards.home-cards"
+    },
+    "home_counter": {
+      "type": "component",
+      "repeatable": true,
+      "component": "counter.counters"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/merchant",
+      "handler": "merchant.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/merchant",
+      "handler": "merchant.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/merchant",
+      "handler": "merchant.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

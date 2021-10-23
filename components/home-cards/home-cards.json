@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_home_cards_home_cards",
+  "info": {
+    "name": "home_cards",
+    "icon": "angle-double-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "background_color": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

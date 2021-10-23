@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "merchants",
+  "info": {
+    "name": "Merchant"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "merchant_section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "agent-section.agent-sections"
+    }
+  }
+}

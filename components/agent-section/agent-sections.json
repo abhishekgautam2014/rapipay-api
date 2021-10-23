@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_agent_section_agent_sections",
+  "info": {
+    "name": "agent_sections",
+    "icon": "angle-double-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "main_title": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consumer-description.consumer-description"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consumer-description.consumer-description"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_about_values_about_values",
+  "info": {
+    "name": "about_values",
+    "icon": "angle-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

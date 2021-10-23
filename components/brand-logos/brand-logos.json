@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_brand_logos_brand_logos",
+  "info": {
+    "name": "brand_logos",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

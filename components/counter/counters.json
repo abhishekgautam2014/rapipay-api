@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_counter_counters",
+  "info": {
+    "name": "counters",
+    "icon": "arrow-up"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

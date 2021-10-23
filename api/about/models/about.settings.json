@@ -1,0 +1,81 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "name": "About",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "center_title": {
+      "type": "string"
+    },
+    "center_description": {
+      "type": "text"
+    },
+    "center_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "journeys": {
+      "type": "component",
+      "repeatable": true,
+      "component": "journey.journey"
+    },
+    "logos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "brand-logos.brand-logos"
+    },
+    "founder_name": {
+      "type": "string"
+    },
+    "founder_position": {
+      "type": "string"
+    },
+    "founder_description": {
+      "type": "text"
+    },
+    "founder_long_description": {
+      "type": "richtext"
+    },
+    "founder_popup_title": {
+      "type": "string"
+    },
+    "about_values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-values.about-values"
+    }
+  }
+}

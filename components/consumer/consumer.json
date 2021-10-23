@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_consumer_consumers",
+  "info": {
+    "name": "consumer",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "link": {
+      "type": "string"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consumer-description.consumer-description"
+    }
+  }
+}

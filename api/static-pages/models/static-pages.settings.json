@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "static_pages",
+  "info": {
+    "name": "static_pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "agents",
+  "info": {
+    "name": "Agent",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "banner_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "center_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "tetimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "testimonial.testimonials"
+    },
+    "partners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partner.partners"
+    },
+    "agent_counters": {
+      "type": "component",
+      "repeatable": true,
+      "component": "counter.counters"
+    },
+    "agent_sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "agent-section.agent-sections"
+    }
+  }
+}

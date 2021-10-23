@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_testimonial_testimonials",
+  "info": {
+    "name": "testimonials",
+    "icon": "arrow-alt-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "location": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

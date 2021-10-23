@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_consumer_description_consumer_descriptions",
+  "info": {
+    "name": "consumer_description",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

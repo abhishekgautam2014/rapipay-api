@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consumers",
+  "info": {
+    "name": "Consumer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "mobile_banner": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "first_title": {
+      "type": "string"
+    },
+    "first_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "first_features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consumer-description.consumer-description"
+    },
+    "second_title": {
+      "type": "string"
+    },
+    "second_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "second_features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consumer-description.consumer-description"
+    },
+    "center_title": {
+      "type": "string"
+    }
+  }
+}
