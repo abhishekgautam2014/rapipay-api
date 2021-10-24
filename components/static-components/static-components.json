@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_static_components_static_components",
+  "info": {
+    "name": "static_components",
+    "icon": "angle-up"
+  },
+  "options": {},
+  "attributes": {
+    "titile": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

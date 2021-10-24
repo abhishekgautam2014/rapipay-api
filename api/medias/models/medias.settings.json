@@ -23,6 +23,10 @@
     },
     "media_date": {
       "type": "date"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

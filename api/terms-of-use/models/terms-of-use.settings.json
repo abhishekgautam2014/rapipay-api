@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "terms_of_uses",
+  "info": {
+    "name": "Privacy Policy",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "component",
+      "repeatable": true,
+      "component": "static-components.static-components"
+    }
+  }
+}
